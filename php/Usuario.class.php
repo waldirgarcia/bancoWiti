@@ -10,6 +10,12 @@ class Usuario{
         $sql->bindValue(":email", $email);
         $sql->bindValue(":senha", $senha);
         $sql->execute();
+
+        if($sql->rowCount() > 0){
+            $dado = $sql->fetch();
+
+           echo $dado['id'];
+        }
     }
 
 }
