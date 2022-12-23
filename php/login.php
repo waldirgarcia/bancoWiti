@@ -12,7 +12,7 @@ if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) &
     $senha = addslashes($_POST['senha']);
 
     if($u->login($email,$senha) == true){
-        if(isset($_SESSION['id'])){
+        if(isset($_SESSION['usu'])){
             header("location: ../banco.php");
 
         }else{
