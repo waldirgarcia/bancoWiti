@@ -12,11 +12,11 @@
 <div class="tela-login">
     <img src="img/login.png" class="usuarios_cansados" width="100" height="100" alt="">
        <h1>Logar</h1>
-          <form action="../bancoWiti/php/login.php" method="get"> 
+          <form action="../bancoWiti/php/login.php" method="POST"> 
             <p>Usuários</p>
-              <input type="text" name="" placeholder="CPF ou E-mail">
+              <input type="text" name="email" placeholder="CPF ou E-mail">
                <p>Senha</p>
-                 <input type="password" name""" placeholder="insira sua senha">
+                 <input type="password" name="senha" placeholder="insira sua senha"><br>
                    <input type="submit" name="" value="tela-login"><br>
                     <a href="#">Esqueceu a senha ? </a><br>
                     <a href="#">Ainda não tem cadastro ?</a>
