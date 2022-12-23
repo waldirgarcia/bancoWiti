@@ -11,12 +11,19 @@ if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) &
     $email = addslashes($_POST['email']);
     $senha = addslashes($_POST['senha']);
 
-    $u->login($email,$senha);
-    die();
+    if($u->login($email,$senha) == true){
+        if(isset($_SESSION['id'])){
+            header("location: ../banco.php");
+
+        }else{
+            header("location: ../index.php");
+        }
+
+    }else{
+        header("location: ../index.php");
+    }
+    
+
 }
-    header("location: ../index.php");
-
-
-
 
 ?>

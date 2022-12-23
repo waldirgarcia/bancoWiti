@@ -14,7 +14,11 @@ class Usuario{
         if($sql->rowCount() > 0){
             $dado = $sql->fetch();
 
-           echo $dado['id'];
+          $_SESSION['usu'] = $dado['id'];
+
+          return true;
+        }else{
+            return false;
         }
     }
 
