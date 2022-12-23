@@ -12,7 +12,7 @@
 <div class="tela-login">
     <img src="img/login.png" class="usuarios_cansados" width="100" height="100" alt="">
        <h1>Logar</h1>
-          <form action="login.php" method="get"> 
+          <form action="../bancoWiti/php/login.php" method="get"> 
             <p>Usuários</p>
               <input type="text" name="" placeholder="CPF ou E-mail">
                <p>Senha</p>
