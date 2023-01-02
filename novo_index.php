@@ -1,3 +1,7 @@
+<?php
+require 'php/login.php';
+
+?>
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -9,8 +13,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        
 
         <link rel="stylesheet" href="css/nstyle.css">
+        
 
         <title>Login</title>
 
@@ -18,10 +24,10 @@
 
     <body>
 
-        <div id="login">
-
+        
             <form class="card" action="../bancoWiti/php/login.php" method="POST">
-
+            <div id="login">
+               
                 <div class="card-header">
 
                     <h2>Login</h2>

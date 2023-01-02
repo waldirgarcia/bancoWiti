@@ -14,13 +14,16 @@ if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) &
     if($u->login($email,$senha) == true){
         if(isset($_SESSION['usu'])){
             header("location: ../banco.php");
-
+            
         }else{
+            
             header("location: ../index.php");
         }
 
     }else{
+        $_SESSION['msg'] = "Login ou senha invalidos";
         header("location: ../index.php");
+        
     }
     
 
