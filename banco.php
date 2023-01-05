@@ -1,5 +1,10 @@
 
-<?php include 'Usuario.class.php' ?>
+<?php 
+include 'php/Usuario.class.php';
+require 'php/conexao.php'
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -44,5 +49,7 @@
             </form>
 
         </div>
-
+            <div>
+                <a href="../bancoWiti/php/logout.php"> SAIR </a>
+            </div>
     </body>
